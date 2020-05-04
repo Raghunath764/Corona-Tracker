@@ -77,29 +77,3 @@ app.mainloop()
 
 
 
-""" def get_details():
-    url = "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats" 
-    ans = input("Enter the country name")
-    ans2= ans.capitalize()
-    querystring = {"country":ans2,"format":"undefined"}
-
-
-    headers = {
-        'x-rapidapi-host': "covid-19-coronavirus-statistics.p.rapidapi.com",
-        'x-rapidapi-key': "d09ecb5585mshbf1cb6dfd23f20cp143727jsn1e892a16518b"
-        }
-
-    response = requests.request("GET", url, headers=headers, params=querystring)
-    res = json.loads(str(response.text))
-    country = res["data"]['covid19Stats'][0]["country"]
-    lastUpdate = res["data"]['covid19Stats'][0]["lastUpdate"]
-    confirmed = res["data"]['covid19Stats'][0]["confirmed"]
-    deaths = res["data"]['covid19Stats'][0]["deaths"]
-    recovered = res["data"]['covid19Stats'][0]["recovered"]
-    #print(res)
-    print(country ,lastUpdate,confirmed,deaths,recovered)
-
-get_details()
-
- """
-
